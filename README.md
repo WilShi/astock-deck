@@ -6,7 +6,7 @@
 ![封面](https://raw.githubusercontent.com/WilShi/astock-deck/main/docs/cover.png)
 
 ```bash
-npx astock-deck 600519
+npx @wilshi/astock-deck 600519
 # → 600519-研究简报.pptx（6 页，222 KB）
 ```
 
@@ -43,10 +43,10 @@ npx astock-deck 600519
 
 ```bash
 # 直接生成默认简报
-npx astock-deck 600519
+npx @wilshi/astock-deck 600519
 
 # 指定输出与估值假设
-npx astock-deck 600519 -o 茅台.pptx --discount 0.12 --growth 0.10
+npx @wilshi/astock-deck 600519 -o 茅台.pptx --discount 0.12 --growth 0.10
 
 # 生成后直接打开（macOS）
 open 600519-研究简报.pptx
