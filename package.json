@@ -1,0 +1,53 @@
+{
+  "name": "astock-deck",
+  "version": "0.1.0",
+  "type": "module",
+  "description": "把 A 股数据直接生成原生、可编辑的 PPTX 研究简报：行情、财务趋势图、估值结论一次成稿。Generate native editable PowerPoint research decks from A-share data.",
+  "license": "MIT",
+  "author": "WilShi",
+  "keywords": [
+    "a-share",
+    "pptx",
+    "powerpoint",
+    "stock",
+    "finance",
+    "report",
+    "research",
+    "cli",
+    "cnstock"
+  ],
+  "bin": {
+    "astock-deck": "./dist/cli.js"
+  },
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "default": "./dist/index.js"
+    },
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE"
+  ],
+  "engines": {
+    "node": "^22.19.0 || >=24.0.0"
+  },
+  "scripts": {
+    "build": "tsdown",
+    "prepare": "tsdown",
+    "typecheck": "tsc --noEmit",
+    "smoke": "node --experimental-strip-types --no-warnings src/cli.ts"
+  },
+  "dependencies": {
+    "pptxgenjs": "^4.0.1"
+  },
+  "devDependencies": {
+    "@types/node": "^22.10.0",
+    "tsdown": "^0.13.0",
+    "typescript": "^5.9.0"
+  }
+}
