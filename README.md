@@ -3,16 +3,16 @@
 > 一条命令，把一只 A 股的数据变成**可编辑的** PowerPoint 研究简报。
 > 不是截图拼贴，不是 HTML 转换——文字是文字，表格是表格，图表是 PowerPoint 原生图表，你可以直接改。
 
-![封面](docs/cover.png)
+![封面](https://raw.githubusercontent.com/WilShi/astock-deck/main/docs/cover.png)
 
 ```bash
 npx astock-deck 600519
 # → 600519-研究简报.pptx（6 页，222 KB）
 ```
 
-![核心结论](docs/summary.png)
+![核心结论](https://raw.githubusercontent.com/WilShi/astock-deck/main/docs/summary.png)
 
-![财务趋势](docs/trend.png)
+![财务趋势](https://raw.githubusercontent.com/WilShi/astock-deck/main/docs/trend.png)
 
 > 上面三张图是**程序真实生成的 PPTX 经渲染截图**，不是设计稿。
 
